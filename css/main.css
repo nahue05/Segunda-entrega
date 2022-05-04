@@ -1,0 +1,1651 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: unset !important;
+}
+
+.row {
+    margin-right: 0;
+}
+
+.gradients {
+    background: linear-gradient(45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
+    background-size: 400% 400%;
+    animation-name: cambiar;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+}
+
+@keyframes cambiar {
+    0% {background-position: 0% 50%;
+    }
+    50% {background-position: 100% 50%;
+    }
+    100% {background-position: 0% 50%;
+    }
+}
+/*responsive 320*/
+@media screen and (min-width:320px){
+    .main-header {
+        height: 400px;
+        border-style: solid;
+        border-color: #1d1c1c;
+        background-image: url(../imagenes/ford.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    
+    }
+    .titulo {
+        font-size: 3rem;
+        font-weight: 200;
+        font-family: 'Lobster', cursive;
+    
+    }
+    
+    .navegador {
+        
+        text-align: right;
+        
+        
+    }
+
+    .social a img{
+    
+        width: 40px;
+        height: 40px;
+        padding: 5px 15px ;
+        float: right;
+        
+    }
+    
+    
+    
+    
+    .navegador ul {
+        list-style-type: none;
+        
+    }
+    
+    .navegador li {
+        display: inline-block;
+        padding: 6px;
+        font-size: 0.6em;
+        font-family: 'Josefin Sans', sans-serif; 
+        color: #fcf7f7;
+    }
+
+    .seccion-1{
+        background-image: url(../imagenes/fondopg.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        height: 450px;
+        width: 100%;
+        background-position:center;
+    }
+
+    .seccion-2 {
+        background-color: #bba76f;
+        padding-left: 15px ;
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+        
+    }  
+    .seccion-2 h3 {
+        font-family:'Josefin Sans', sans-serif ;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: left;    
+    } 
+    
+    .seccion-2 p{
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .seccion-3 {
+        background-image: url(../imagenes/fondoseccion3.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        height: 450px;
+        width: 100%;
+        background-position: center;
+    }
+    .footer h2 {
+        font-size: 18px;
+    }
+    
+    .footer a {
+        font-size: 15px;
+        
+    }
+    .footer-linkreg {
+        padding-bottom: 20px;
+    }
+    /*registrarse*/
+    .reg-navegador ul {
+        list-style-type: none;
+        
+    }
+    
+    .reg-navegador li {
+        display: inline-block;
+        padding: 6px;
+        font-size: 0.6em;
+        color: #fcf7f7;
+        font-family: 'Josefin Sans', sans-serif;
+    
+    }
+    
+    .reg-header {
+        text-align: center;
+        width: 100%;
+        
+    }
+    
+    .reg-header nav {
+        
+        text-align: right;
+        padding-right: 10px;
+    }
+    
+    
+    
+    
+    .reg-header h2 {
+        font-size: 2em;
+        font-family: 'Grape Nuts', cursive;
+        font-weight: 300;
+        
+        
+    }
+    
+    
+    
+    
+    #registrarse {
+        background-image: url(../imagenes/mainregfondo.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+    
+    .formulario {
+        display: grid;
+        width: 60%;
+        height: 40%;
+        margin: 160px auto 240px auto;
+        padding: 30px 40px 30px 40px;
+        
+        grid-template-areas: 
+        
+        "form foto-reg"
+        ;
+    }
+    
+    .form {
+        grid-area: form;
+    
+    }
+    
+    .foto-reg {
+        grid-area: foto-reg;
+        
+    }
+    
+    .foto-reg img {
+        width: 0%;
+        height: 0%;
+    }
+
+    .formulario form p {
+        padding: 10px 0px 0px 0px;
+        text-align: left;
+    }
+    
+    .formulario form h3 {
+        padding-bottom: 20px ;
+        font-family:'Josefin Sans', sans-serif ;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    /*catalogo*/
+
+    .cat-navegador ul {
+        list-style-type: none;
+        
+    }
+    
+    .cat-navegador li {
+        display: inline-block;
+        padding: 6px;
+        font-size: 0.6em;
+        font-family:'Josefin Sans', sans-serif ;
+        color: #fcf7f7;
+    
+    }
+    
+    .catalogo-header {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 60px;
+        
+    }
+    
+    .catalogo-header nav {
+        
+        text-align: right;
+        padding-right: 10px;
+    }
+    
+    
+    
+    
+    .catalogo-header h2 {
+        font-size: 2em;
+        font-family: 'Grape Nuts', cursive;
+        font-weight: 300;
+        }
+        
+        
+        .main-catalogo {
+            background-image: url(../imagenes/fondo-catalogo.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+        
+        
+        }
+        
+        
+        .catalogo h3 {
+            font-size: larger;
+            text-align: center;
+            color: #fcf7f7;
+            font-family: 'Lobster', cursive;
+            background-color: #bba76f;
+        }
+        .catalogo img {
+
+            height: 200px;
+            width: 100%;
+            padding-bottom: 60px;
+            padding-top: 60px;
+            
+            
+        }
+
+    /*ayuda*/
+
+    .ayu-navegador {
+
+        text-align: right;
+    }
+    
+    .ayu-navegador ul {
+        list-style-type: none;
+        
+        
+    }
+    
+    .ayu-navegador li {
+        display: inline-block;
+        padding: 6px;
+        font-size: 0.6em;
+        font-family:'Josefin Sans', sans-serif ;
+        color: #fcf7f7;
+    }
+    
+    
+    
+    
+    
+    .ayu-header {
+        text-align: center;
+        border-bottom: solid #5f5205;
+        
+    }
+
+    .buscador{
+        text-align: right;
+    }
+    
+    .buscador input {
+        
+        border-radius: 20px;
+    }
+
+    .ayu-header nav {
+        
+        text-align: right;
+        padding-right: 10px;
+    }
+    
+    
+    
+    
+    .ayu-header h2 {
+        font-size: 2em;
+        font-family: 'Grape Nuts', cursive;
+        font-weight: 300;
+        }
+    
+    .ayuda-main h4{
+        text-align: center;
+        font-family:'Josefin Sans', sans-serif ;
+        font-size: 1rem;
+        font-weight: 600;
+
+    }
+
+    .ayuda-main p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+        font-size: 11px;
+    }
+    
+    .seccion2-ayuda{
+        background-image: url(../imagenes/fondoayuda.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        background-position: center;
+    
+    }
+    
+    /*sobre nosotros*/
+
+    .nos-navegador ul {
+        list-style-type: none;
+        
+    }
+    
+    .nos-navegador li {
+        
+        display: inline-block;
+        padding: 6px;
+        font-size: 0.6em;
+        font-family:'Josefin Sans', sans-serif ;
+        color: #fcf7f7;
+    }
+    
+    .nos-header {
+        text-align: center;
+        border-bottom: solid #5f5205;
+        
+    }
+    
+    .nos-header nav {
+        
+        text-align: right;
+        padding-right: 10px;
+    }
+    
+    
+    
+    
+    .nos-header h2 {
+        font-size: 2em;
+        font-family: 'Grape Nuts', cursive;
+        font-weight: 300;
+        
+        
+    }
+    
+    .seccion-nosotros{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+        font-size: 12px;
+        
+    }
+    
+    .seccion2-nosotros {
+        background-image: url(../imagenes/fondonosotros.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        background-position: center;
+    }
+    
+    
+    
+    
+    
+    .seccion3-nosotros {
+        text-align: center;
+        
+    }
+    
+    .seccion3-nosotros p {
+        font-family:'Josefin Sans', sans-serif ;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: left; 
+        padding: 15px;
+    }
+    
+    .seccion3-nosotros div iframe {
+        width: 90%;
+        height: 500px;
+        
+    }
+
+}
+
+/*responsive 375 solo catalogo*/
+@media screen and (min-width:375px){
+
+    .cat-navegador ul {
+        list-style-type: none;
+        
+    }
+    
+    .cat-navegador li {
+        display: inline-block;
+        padding: 7px;
+        font-size: 0.6em;
+        font-family:'Josefin Sans', sans-serif ;
+        color: #fcf7f7;
+    
+    }
+    
+    .catalogo-header {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    
+    .catalogo-header nav {
+        
+        text-align: right;
+        padding-right: 10px;
+    }
+    
+    
+    
+    
+    .catalogo-header h2 {
+        font-size: 2em;
+        font-family: 'Grape Nuts', cursive;
+        font-weight: 300;
+        }
+        
+        
+        .main-catalogo {
+            background-image: url(../imagenes/fondo-catalogo.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+        
+        
+        }
+        
+        
+        .catalogo h3 {
+            font-size: larger;
+            text-align: center;
+            color: #fcf7f7;
+            font-family: 'Lobster', cursive;
+            background-color: #bba76f;
+        }
+        .catalogo img {
+
+            height: 275px;
+            width: 100%;
+            padding-bottom: 60px;
+            padding-top: 60px;
+            
+            
+        }
+    }
+
+
+
+/*responsive 480*/
+
+@media screen and (min-width:480px){
+    /*header*/
+    .main-header {
+        height: 400px;
+        border-style: solid;
+        border-color: #1d1c1c;
+        background-image: url(../imagenes/ford.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    
+    }
+    .titulo {
+        font-size: 3rem;
+        font-weight: 200;
+        font-family: 'Lobster', cursive;
+    
+    }
+    
+    .navegador {
+        
+        text-align: right;
+        
+        
+    }
+
+    .social a img{
+    
+        width: 50px;
+        height: 50px;
+        padding: 5px 15px;
+        float: right;
+        
+    }
+    
+    
+    
+    
+    .navegador ul {
+        list-style-type: none;
+        
+    }
+    
+    .navegador li {
+        display: inline-block;
+        padding: 6px;
+        font-size: 0.9em;
+        font-family: 'Josefin Sans', sans-serif; 
+        color: #fcf7f7;
+    }
+
+    .seccion-1{
+        background-image: url(../imagenes/fondopg.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        height: 450px;
+        width: 100%;
+        background-position:center;
+    }
+
+    .seccion-2 {
+        background-color: #bba76f;
+        padding-left: 15px ;
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+        
+    }  
+    .seccion-2 h3 {
+        font-family:'Josefin Sans', sans-serif ;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: left;    
+    } 
+    
+    .seccion-2 p{
+        font-size: 13px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .seccion-3 {
+        background-image: url(../imagenes/fondoseccion3.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        height: 450px;
+        width: 100%;
+        background-position: center;
+    }
+
+    .footer h2 {
+        font-size: 20px;
+    }
+    
+    .footer a {
+        font-size: 18px;
+        
+    }
+    .footer-linkreg {
+        padding-bottom: 20px;
+    }
+    
+    
+    /*registrarse*/
+    
+        .reg-navegador ul {
+            list-style-type: none;
+            
+        }
+        
+        .reg-navegador li {
+            display: inline-block;
+            padding: 8px;
+            font-size: 0.8em;
+            color: #fcf7f7;
+            font-family: 'Josefin Sans', sans-serif;
+        
+        }
+        
+        .reg-header {
+            background-color:#bba76f ;
+            text-align: center;
+            width: 100%;
+            
+        }
+        
+        .reg-header nav {
+            
+            text-align: right;
+            padding-right: 10px;
+        }
+        
+        
+        
+        
+        .reg-header h2 {
+            font-size: 2em;
+            font-family: 'Grape Nuts', cursive;
+            font-weight: 300;
+            
+            
+        }
+        
+        
+        
+        
+        #registrarse {
+            background-image: url(../imagenes/mainregfondo.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+        }
+        
+        .formulario {
+            display: grid;
+            width: 60%;
+            height: 40%;
+            margin: 160px auto 240px auto;
+            padding: 30px 40px 30px 40px;
+            
+            grid-template-areas: 
+            
+            "form foto-reg"
+            ;
+        }
+        
+        .form {
+            grid-area: form;
+        
+        }
+        
+        .foto-reg {
+            grid-area: foto-reg;
+            
+        }
+        
+        .foto-reg img {
+            width: 0%;
+            height: 0%;
+        }
+    
+        .formulario form p {
+            padding: 10px 0px 0px 0px;
+            text-align: left;
+        }
+        
+        .formulario form h3 {
+            padding-bottom: 20px ;
+            font-family:'Josefin Sans', sans-serif ;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: left;
+        }
+    
+    /*ayuda*/
+
+    .ayu-navegador {
+
+        text-align: right;
+    }
+    
+    .ayu-navegador ul {
+        list-style-type: none;
+        
+        
+    }
+    
+    .ayu-navegador li {
+        display: inline-block;
+        padding: 6px;
+        font-size: 0.6em;
+        font-family:'Josefin Sans', sans-serif ;
+        color: #fcf7f7;
+    }
+    
+    
+    
+    
+    
+    .ayu-header {
+        text-align: center;
+        border-bottom: solid #5f5205;
+        
+    }
+
+    .buscador{
+        text-align: right;
+    }
+    
+    .buscador input {
+        
+        border-radius: 20px;
+    }
+
+    .ayu-header nav {
+        
+        text-align: right;
+        padding-right: 10px;
+    }
+    
+    
+    
+    
+    .ayu-header h2 {
+        font-size: 2em;
+        font-family: 'Grape Nuts', cursive;
+        font-weight: 300;
+        }
+    
+    .ayuda-main h4{
+        text-align: center;
+        font-family:'Josefin Sans', sans-serif ;
+        font-size: 1rem;
+        font-weight: 600;
+
+    }
+
+    .ayuda-main p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 15px;
+        font-size: 13px;
+    }
+    
+    .seccion2-ayuda{
+        background-image: url(../imagenes/fondoayuda.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        background-position: center;
+    
+    }
+    /*sobre nosotros*/
+    .nos-navegador ul {
+        list-style-type: none;
+        
+    }
+    
+    .nos-navegador li {
+        
+        display: inline-block;
+        padding: 7px;
+        font-size: 0.7em;
+        font-family:'Josefin Sans', sans-serif ;
+        color: #fcf7f7;
+    }
+    
+    .nos-header {
+        text-align: center;
+        border-bottom: solid #5f5205;
+        
+    }
+    
+    .nos-header nav {
+        
+        text-align: right;
+        padding-right: 10px;
+    }
+    
+    
+    
+    
+    .nos-header h2 {
+        font-size: 2em;
+        font-family: 'Grape Nuts', cursive;
+        font-weight: 300;
+        
+        
+    }
+    
+    .seccion-nosotros{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 15px;
+        font-size: 13px;
+        
+    }
+    
+    .seccion2-nosotros {
+        background-image: url(../imagenes/fondonosotros.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        background-position: center;
+    }
+    
+    
+    
+    
+    
+    .seccion3-nosotros {
+        text-align: center;
+        
+    }
+    
+    .seccion3-nosotros p {
+        font-family:'Josefin Sans', sans-serif ;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: left; 
+        padding: 20px;
+    }
+    
+    .seccion3-nosotros div iframe {
+        width: 90%;
+        height: 500px;
+        
+    }
+}
+
+/*responsive 500  solo catalogo*/
+@media screen and (min-width:500px){
+
+    .cat-navegador ul {
+        list-style-type: none;
+        
+        }
+            
+    .cat-navegador li {
+            display: inline-block;
+            padding: 8px;
+            font-size: 0.7em;
+            font-family:'Josefin Sans', sans-serif ;
+            color: #fcf7f7;
+            
+        }
+            
+        .catalogo-header {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+            
+        .catalogo-header nav {
+                
+            text-align: right;
+            padding-right: 10px;
+        }
+            
+            
+            
+            
+        .catalogo-header h2 {
+            font-size: 2em;
+            font-family: 'Grape Nuts', cursive;
+            font-weight: 300;
+        }
+                
+                
+            .main-catalogo {
+                background-image: url(../imagenes/fondo-catalogo.jpg);
+                background-attachment: fixed;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                
+                
+            }
+                
+                
+            .catalogo h3 {
+                font-size: larger;
+                text-align: center;
+                color: #fcf7f7;
+                font-family: 'Lobster', cursive;
+                background-color: #bba76f;
+            }
+
+            .catalogo img {
+        
+                height: 325px;
+                width: 100%;
+                padding-bottom: 60px;
+                padding-top: 60px;                    
+            }
+    }
+
+/*responsive 600 solo catalogo */
+
+@media screen and (min-width:600px){
+
+    .cat-navegador ul {
+        list-style-type: none;
+        
+    }
+    
+    .cat-navegador li {
+        display: inline-block;
+        padding: 10px;
+        font-size: 0.9em;
+        font-family:'Josefin Sans', sans-serif ;
+        color: #fcf7f7;
+    
+    }
+    
+    .catalogo-header {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    
+    .catalogo-header nav {
+        
+        text-align: right;
+        padding-right: 10px;
+    }
+    
+    
+    
+    
+    .catalogo-header h2 {
+        font-size: 2em;
+        font-family: 'Grape Nuts', cursive;
+        font-weight: 300;
+        }
+        
+        
+    .main-catalogo {
+        background-image: url(../imagenes/fondo-catalogo.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        
+        
+    }
+        
+        
+    .catalogo h3 {
+        font-size: larger;
+        text-align: center;
+        color: #fcf7f7;
+        font-family: 'Lobster', cursive;
+        background-color: #bba76f;
+    }
+    .catalogo img {
+
+        height: 400px;
+        width: 100%;
+        padding-bottom: 60px;
+        padding-top: 60px;
+        
+    
+    }
+}
+
+/*responsive 900 solo catalogo*/
+@media screen and (min-width:900px){
+
+    .cat-navegador ul {
+        list-style-type: none;
+        
+    }
+    
+    .cat-navegador li {
+        display: inline-block;
+        padding: 10px;
+        font-size: 1em;
+        font-family:'Josefin Sans', sans-serif ;
+        color: #fcf7f7;
+    
+    }
+    
+    .catalogo-header {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    
+    .catalogo-header nav {
+        
+        text-align: right;
+        padding-right: 10px;
+    }
+    
+    
+    
+    
+    .catalogo-header h2 {
+        font-size: 2em;
+        font-family: 'Grape Nuts', cursive;
+        font-weight: 300;
+        }
+        
+        
+        .main-catalogo {
+            background-image: url(../imagenes/fondo-catalogo.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+        
+        
+        }
+        
+        
+        .catalogo h3 {
+            font-size: larger;
+            text-align: center;
+            color: #fcf7f7;
+            font-family: 'Lobster', cursive;
+            background-color: #bba76f;
+        }
+        .catalogo img {
+
+            height: 500px;
+            width: 100%;
+            padding-bottom: 60px;
+            padding-top: 60px;
+            
+            
+        }
+}
+
+
+/*responsive 1024*/
+
+@media screen and (min-width:1024px) {
+    /*general*/
+    
+    
+    /*index*/
+    .main-header {
+        height: 400px;
+        border-style: solid;
+        border-color: #1d1c1c;
+        animation: cambiar 10s ease-in-out infinite;
+        }
+
+    .logo {
+        width: auto;
+        height: 300px;
+        padding-top: 15px;
+        padding-left: 30px;
+        padding-bottom: 15px;
+    }
+
+    
+
+    .titulo {
+        font-size: 3rem;
+        font-weight: 200;
+        font-family: 'Lobster', cursive;
+    
+    }
+    
+    .navegador{
+        
+        width: 100%;
+        
+        
+    }
+
+    .social a img{
+    
+        width: 55px;
+        height: 55px;
+        padding: 5px 15px;
+        float: right;
+        
+        
+    }
+    
+    .catalogo img:hover {
+        transform: scale(1.4);
+    }
+    
+    .navegador ul {
+        list-style-type: none;
+        }
+    
+    .navegador li {
+        display: inline-block;
+        padding: 5px;
+        font-size: 1em;
+        font-family: 'Josefin Sans', sans-serif; 
+        color: #fcf7f7;
+        
+    }
+    
+    
+    .navegador ul li:hover {
+        background-color: #d38623;
+        
+    }
+    
+    .navegardor ul li a:hover {
+        color: #666e17;
+    }
+
+    .seccion-1{
+        background-image: url(../imagenes/fondopg.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        height: 470px;
+        width: 100%;
+        background-position:center;
+    }
+
+    .seccion-2 {
+        background-color: #bba76f;
+        padding-left: 30px ;
+        padding-right: 30px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        
+        
+    }  
+    .seccion-2 h3 {
+        font-family:'Josefin Sans', sans-serif ;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-align: center;    
+    } 
+    
+    .seccion-2 p{
+        font-size: 17px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .seccion-3 {
+        background-image: url(../imagenes/fondoseccion3.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        height: 450px;
+        width: 100%;
+        background-position: center;
+    
+    }
+    .footer h2 {
+        font-size: 24px;
+    }
+    
+    .footer a {
+        font-size: 20px;
+        
+    }
+    .footer-linkreg {
+        padding-bottom: 20px;
+    }
+
+    
+    /*registrarse*/
+    
+    .reg-navegador ul {
+        list-style-type: none;
+        
+    }
+    
+    .reg-navegador li {
+        display: inline-block;
+        font-size: 1em;
+        color: #fcf7f7;
+        font-family: 'Josefin Sans', sans-serif;
+    
+    }
+    
+    .reg-header {
+        background-color:#bba76f ;
+        text-align: center;
+        width: 100%;
+        
+    }
+    
+    .reg-header nav {
+        
+        text-align: right;
+        padding-right: 10px;
+    }
+    
+    
+    .reg-navegador ul li:hover {
+        background-color: #d38623;
+    }
+    
+    .reg-navegador ul li a:hover {
+        color: #666e17;
+    }
+    
+    .reg-header h2 {
+        font-size: 2em;
+        font-family: 'Grape Nuts', cursive;
+        font-weight: 300;
+        height: 50px;
+        
+        
+    }
+    
+    #registrarse {
+        background-image: url(../imagenes/mainregfondo.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+    
+    .formulario {
+        display: flex;
+        display: grid;
+        width: 75%;
+        height: 40%;
+        margin: 160px auto 240px auto;
+        padding: 40px 30px;
+        
+        grid-template-areas: 
+        
+        "form foto-reg"
+        ;
+        justify-content: space-around;
+        
+    }
+    
+    .form {
+        grid-area: form;
+    
+    }
+    
+    .foto-reg {
+        grid-area: foto-reg;
+        
+    }
+    
+    .foto-reg img {
+        width: 500px;
+        height: 400px;
+        
+    }
+
+    
+
+    .formulario form p {
+        padding: 10px 0px 0px 0px;
+        text-align: left;
+    }
+    
+    .formulario form h3 {
+        padding-bottom: 20px ;
+        font-family:'Josefin Sans', sans-serif ;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    /*catalogo*/
+    
+    .cat-navegador ul {
+        list-style-type: none;
+        
+    }
+    
+    .cat-navegador li {
+        display: inline-block;
+        
+        font-size: 1.2em;
+        font-family:'Josefin Sans', sans-serif ;
+        color: #fcf7f7;
+    
+    }
+    
+    .catalogo-header {
+        text-align: center;
+        width: 100%;
+        
+        
+    }
+    
+    .catalogo-header nav {
+        
+        text-align: right;
+        padding-right: 10px;
+    }
+    
+    .cat-navegador ul li:hover {
+        background-color: #d38623;
+    }
+    
+    .cat-navegador ul li a:hover {
+        color: #666e17;
+    }
+    
+    
+    .catalogo-header h2 {
+        font-size: 2em;
+        font-family: 'Grape Nuts', cursive;
+        font-weight: 300;
+        height: 50px;
+        }
+        
+        .catalogo h3 {
+            font-size: larger;
+            text-align: center;
+            color: #fcf7f7;
+            font-family: 'Lobster', cursive;
+            background-color: #bba76f;
+        }
+
+        .catalogo {
+            display: flex;
+            display: grid;
+            justify-content: space-around;
+            grid-template-areas: 
+            
+            "titulo1 titulo2 titulo3"
+            "articulo1 articulo2 articulo3"
+            "titulo4 titulo5 titulo6"
+            "articulo4 articulo5 articulo6"
+            "titulo7 titulo8 titulo9"
+            "articulo7 articulo8 articulo9"
+
+            ;
+        }
+
+        .titulo1 {
+            grid-area: titulo1;
+        }
+
+        .titulo2 {
+            grid-area: titulo2;
+        }
+        .titulo3 {
+            grid-area: titulo3;
+        }
+        .titulo4 {
+            grid-area: titulo4;
+        }
+        .titulo5 {
+            grid-area: titulo5;
+        }
+        .titulo6 {
+            grid-area: titulo6;
+        }
+        .titulo7 {
+            grid-area: titulo7;
+        }
+        .titulo8 {
+            grid-area: titulo8;
+        }.titulo9 {
+            grid-area: titulo9;
+        }
+
+
+        .articulo1 {
+            grid-area: articulo1;
+        }
+        .articulo2{
+            grid-area: articulo2;
+        }
+        .articulo3 {
+            grid-area: articulo3;
+        }
+        .articulo4 {
+            grid-area: articulo4;
+        }
+        .articulo5 {
+            grid-area: articulo5;
+        }
+        .articulo6 {
+            grid-area: articulo6;
+        }
+        .articulo7 {
+            grid-area: articulo7;
+        }
+        .articulo8 {
+            grid-area: articulo8;
+        }
+        .articulo9 {
+            grid-area: articulo9;
+        }
+
+
+
+        .catalogo img {
+            height: 220px;
+            width: 330px;
+            padding-top: 60px;
+            
+        }
+        /*ayuda*/
+        .ayu-navegador {
+            padding-top: 10px;
+            
+        }
+        
+        .ayu-navegador ul {
+            list-style-type: none;
+            
+            
+        }
+        
+        .ayu-navegador li {
+            display: inline-block;
+            
+            font-size: 1.2em;
+            font-family:'Josefin Sans', sans-serif ;
+            color: #fcf7f7;
+        }
+        
+        .buscador {
+            text-align: right;
+        }
+
+        .ayu-header nav ul li:hover {
+            background-color: #d38623;
+        }
+        
+        .ayu-header nav ul li a:hover {
+            color: #666e17;
+        }
+        
+        
+        .ayu-header {
+            text-align: center;
+            border-bottom: solid #5f5205;
+            
+        }
+    
+        
+        
+        .buscador input {
+            width: 200px;
+            height: 20px;
+            border-radius: 20px;
+        }
+    
+        .ayu-header nav {
+            
+            text-align: right;
+            padding-right: 10px;
+        }
+        
+        .ayu-header h2 {
+            font-size: 2em;
+            font-family: 'Grape Nuts', cursive;
+            font-weight: 300;
+            }
+        
+        .ayuda-main h4{
+            text-align: center;
+            font-family:'Josefin Sans', sans-serif ;
+            font-size: 1.3rem;
+            font-weight: 600;
+    
+        }
+    
+        .ayuda-main p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 20px;
+            font-size: 20px;
+        }
+        
+        .seccion2-ayuda{
+            background-image: url(../imagenes/fondoayuda.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            width: 100%;
+            height: 500px;
+            background-position: center;
+        
+        }
+    /*sobre nosotros*/
+    .nos-navegador ul {
+        list-style-type: none;
+        
+    }
+    
+    .nos-navegador li {
+        
+        display: inline-block;
+        
+        font-size: 1.2em;
+        font-family:'Josefin Sans', sans-serif ;
+        color: #fcf7f7;
+    }
+    
+    .nos-header nav ul li:hover {
+        background-color: #d38623;
+    }
+    
+    .nos-header nav ul li a:hover {
+        color: #666e17;
+    }
+
+    .nos-header {
+        text-align: center;
+        border-bottom: solid #5f5205;
+        
+    }
+    
+    .nos-header nav {
+        
+        text-align: right;
+        padding-right: 10px;
+    }
+    
+    
+    .nos-header h2 {
+        font-size: 2em;
+        font-family: 'Grape Nuts', cursive;
+        font-weight: 300;
+        height: 50px;
+        
+        
+    }
+    
+    .seccion-nosotros{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 40px;
+        font-size: 20px;
+        
+    }
+    
+    .seccion2-nosotros {
+        background-image: url(../imagenes/fondonosotros.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+    }
+    
+    .seccion3-nosotros {
+        text-align: center;
+        
+    }
+    
+    .seccion3-nosotros p {
+        font-family:'Josefin Sans', sans-serif ;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center; 
+        
+    }
+    
+    .seccion3-nosotros div iframe {
+        width: 90%;
+        height: 500px;  
+    }
+}
+
+
+/*fin del responsive*/
+
+/*general*/
+
+#catalogo {
+            
+    background-image: url(../imagenes/fondo-catalogo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    
+}
+
+.links {
+    text-decoration: none;
+    color: royalblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1d1c1c;
+}
+
+
+
+
+.footer {
+    font-family:'Josefin Sans', sans-serif ;
+    text-align: center;
+    padding: 20px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+
+
+
